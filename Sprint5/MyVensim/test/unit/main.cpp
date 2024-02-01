@@ -1,0 +1,20 @@
+#include <iostream>
+#include "teste_Unit_Modelo.h"
+#include "teste_Unit_Fluxo.h"
+#include "teste_Unit_Sistema.h"
+
+using namespace std;
+
+
+int main(){
+
+  cout << "Inicio dos testes unitarios!!!";
+
+  testeUnitarioFluxo();
+	testeUnitarioSistema();
+	testeUnitarioModelo();
+
+  cout << "\nFim dos testes unitarios!!!\n";
+
+  return 0;
+}

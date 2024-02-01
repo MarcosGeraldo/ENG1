@@ -1,0 +1,8 @@
+all: 
+	g++ -L ../../src/lib -Wall -g -o ../../bin/unitTeste.exe *.h *.cpp -lmyVensim
+	export LD_LIBRARY_PATH=../../src/lib/:$LD_LIBRARY_PATH
+clean:
+	rm -f ../../bin/*.o
+
+run:
+	../../bin/ ./unitTeste
